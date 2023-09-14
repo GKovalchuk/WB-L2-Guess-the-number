@@ -1,0 +1,60 @@
+.game {
+	display: none;
+	flex-direction: column;
+
+	gap: 1rem;
+}
+
+.counter {
+	text-align: right;
+}
+
+.texts-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+
+	gap: 2rem;
+	row-gap: 1rem;
+}
+
+.hint {
+	color: var(--gray);
+}
+
+.game-footer {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+
+	height: fit-content;
+
+	gap: 1rem;
+}
+
+.record-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+
+	width: 100%;
+
+	gap: 1rem;
+}
+
+.record-wrapper p {
+	margin: auto 0;
+}
+
+.record-button {
+	display: inline-block;
+
+	width: auto;
+
+	padding: 0;
+
+	border: none;
+	background: transparent;
+	text-align: center;
+	color: var(--accent-color);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru" id="html">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="image/x-icon" href="./favicon.ico" rel="shortcut icon">
+	<link type="Image/x-icon" href="./favicon.ico" rel="icon">
+	<link rel="stylesheet" href="./assets/styles/style.css?_v=20230915013555" />
+	<link href="https://fonts.cdnfonts.com/css/impact?_v=20230915013555" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/arial?_v=20230915013555" rel="stylesheet">
+	<title>Guess_The_Number</title>
+</head>
+
+<body id="body">
+	<header id="header">Guess_the_Number</header>
+
+	<main>
+		<h2 class="title">Я загадаю число, попытайся его угадать.</h2>
+		<section class="game-wrapper">
+			<div id="startingField" class="starting-field">
+	<p>Введи границы, в которых мне нужно загадать число:</p>
+	<div class="input-wrapper">
+		<label for="setMin">От</label>
+		<input id="setMin" type="text" value="1">
+		<span class="bar"></span>
+	</div>
+	<div class="input-wrapper">
+		<label for="setMax">До</label>
+		<input id="setMax" type="text" value="100">
+		<span class="bar"></span>
+	</div>
+</div>
+<div id="game" class="game">
+	<div class="texts-wrapper">
+		<p>Какое число я загадал?</p>
+		<p class="hint" id="hint"></p>
+	</div>
+	<div class="input-wrapper">
+		<label for="guessInput">Твой ответ: </label>
+		<input id="guessInput" type="text" disabled>
+		<span class="bar"></span>
+	</div>
+	<button id="guessButton" disabled>Проверить</button>
+	<div class="texts-wrapper">
+		<p class="counter" id="attemptsCounter">Попыток: 0</p>
+		<p id="response"></p>
+	</div>
+</div>
+<div class="game-footer">
+	<button id="startButton">Начнем!</button>
+	<div class="record-wrapper">
+		<p id="recordField"></p>
+		<button class="record-button" id="resetRecord">Cбросить рекорд</button>
+	</div>
+</div>
+		</section>
+	</main>
+
+	<script src="js/app.min.js?_v=20230915013555"></script>
+</body>
+
+</html>

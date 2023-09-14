@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru" id="html">
+@@include('html/head.html',{ "title":"Guess_The_Number" })
+
+<body id="body">
+	@@include('html/header.html',{})
+
+	<main>
+		<h2 class="title">Я загадаю число, попытайся его угадать.</h2>
+		<section class="game-wrapper">
+			@@include('html/playingField.html',{})
+		</section>
+	</main>
+
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

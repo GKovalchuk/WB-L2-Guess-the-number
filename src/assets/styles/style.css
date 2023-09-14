@@ -1,0 +1,93 @@
+@import url("/assets/styles/variables.css");
+@import url("/assets/styles/normalize.css");
+@import url("/assets/styles/playingField.css");
+@import url("/assets/styles/gameField.css");
+
+* {
+	box-sizing: border-box;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+	text-align: left;
+	letter-spacing: 0.0625rem;
+	color: var(--primary-color);
+}
+
+body {
+	min-width: 16rem;
+
+	margin: 0 1rem;
+
+	background-color: var(--bg-light);
+}
+
+header {
+	padding: 1rem 0 0.5rem;
+
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	font-size: 1.75rem;
+	text-align: left;
+	letter-spacing: 0.25rem;
+}
+
+.title {
+	margin: 1rem 0;
+
+	font-size: 1rem;
+}
+
+.game-wrapper {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	height: fit-content;
+
+	gap: 2rem;
+	padding: 1rem 1.25rem;
+
+	border: 0.0625rem solid var(--primary-color);
+	border-radius: var(--border-radius--main);
+	background-color: #fff;
+}
+
+@media (min-width: 769px) {
+	header {
+		min-height: 8vh;
+
+		padding: 1.5rem 0 2rem;
+
+		font-size: 2rem;
+	}
+
+	body {
+		margin: 0 2rem;
+	}
+
+	.game-wrapper {
+		padding: 1rem 2rem;
+	}
+
+	.title {
+		font-size: 1.125rem;
+	}
+}
+@media (min-width: 1168px) {
+	header {
+		min-height: 8vh;
+
+		padding: 1.5rem 0 2rem;
+
+		font-size: 2rem;
+	}
+
+	body {
+		width: 68.75rem;
+
+		margin: 0 auto;
+	}
+
+	.title {
+		font-size: 1.125rem;
+	}
+}

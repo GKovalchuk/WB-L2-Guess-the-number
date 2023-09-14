@@ -1,0 +1,36 @@
+<div id="startingField" class="starting-field">
+	<p>Введи границы, в которых мне нужно загадать число:</p>
+	<div class="input-wrapper">
+		<label for="setMin">От</label>
+		<input id="setMin" type="text" value="1">
+		<span class="bar"></span>
+	</div>
+	<div class="input-wrapper">
+		<label for="setMax">До</label>
+		<input id="setMax" type="text" value="100">
+		<span class="bar"></span>
+	</div>
+</div>
+<div id="game" class="game">
+	<div class="texts-wrapper">
+		<p>Какое число я загадал?</p>
+		<p class="hint" id="hint"></p>
+	</div>
+	<div class="input-wrapper">
+		<label for="guessInput">Твой ответ: </label>
+		<input id="guessInput" type="text" disabled>
+		<span class="bar"></span>
+	</div>
+	<button id="guessButton" disabled>Проверить</button>
+	<div class="texts-wrapper">
+		<p class="counter" id="attemptsCounter">Попыток: 0</p>
+		<p id="response"></p>
+	</div>
+</div>
+<div class="game-footer">
+	<button id="startButton">Начнем!</button>
+	<div class="record-wrapper">
+		<p id="recordField"></p>
+		<button class="record-button" id="resetRecord">Cбросить рекорд</button>
+	</div>
+</div>
