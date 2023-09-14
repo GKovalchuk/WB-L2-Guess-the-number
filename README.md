@@ -1,7 +1,7 @@
 Wildberries L2
 ===
 
-### 1. Игра угадай число
+### 6. Игра угадай число
 #### Решение задачи
 Ссылка на игру: https://guess-the-number-mauve-five.vercel.app/
 
